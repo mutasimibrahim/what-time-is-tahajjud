@@ -13,6 +13,7 @@
 </head>
 
 <style>
+  /* The background color of the entire website */
   .bg-custom1 {
     background-color: rgb(241, 241, 241);
   }
@@ -23,6 +24,16 @@
 
   .bg-custom3 {
     background-color: rgb(255, 0, 0);
+  }
+
+  /* The background color of the arabic parts of the Quran and Hadith */
+  .bg-custom4 {
+    background-color: rgb(219, 227, 226);
+  }
+
+  /* The background color of the english translation of the Quran and Hadith */
+  .bg-custom5 {
+    background-color: rgb(255, 255, 255);
   }
 
   /* Apply the Archivo font to relevant elements */
@@ -50,24 +61,56 @@
       <h4 class="mx-auto font-archivo2 mb-1">ENTER YOUR CITY</h4>
     </div>
 
-    <div class="cityEnterBar-container d-flex justify-content-center mt-3 mb-2">
-      <div class="input-group">
-        <input type="text" class="form-control border-0" placeholder="SEARCH" aria-label="Search" aria-describedby="button-addon2" style="color: black; margin-right: -1px;">
-        <button class="btn" type="button" id="button-addon2" style="background-color: #004AAD; border: none; color: white; margin-left: -1px;">
-          <img src="search-icon-url.png" alt="Search" style="width: 20px; height: 20px;">
-        </button>
+    <div class="cityEnterBar-container d-flex justify-content-center mt-1 mb-2">
+        <div class="input-group justify-content-between align-items-center" style="max-width: 600px;">
+            <input type="text" class="form-control border-0" placeholder="SEARCH" aria-label="Search" aria-describedby="button-addon2" style="color: black; margin-right: -1px;">
+            <button class="btn" type="button" id="button-addon2" style="background-color: #004AAD; border: none; color: white; margin-left: -1px;">
+                <img src="search-icon-url.png" alt="Search" style="width: 20px; height: 20px;">
+            </button>
+        </div>
+    </div>
+
+    <div class="ayaatHadith-container text-center mt-5">
+      <div class="row align-items-start gx-5">
+        <div class="col">
+          <div class="p-3 bg-custom4" style="height: 40vh">
+            PLACE 17:79 HERE
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-custom4" style="height: 40vh">
+            One of the three columns
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-custom4" style="height: 40vh">
+            One of the three columns
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-start gx-5">
+        <div class="col">
+          <div class="p-3 bg-custom5" style="height: 20vh">
+            One of the three columns
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-custom5" style="height: 20vh">
+            One of the three columns
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-custom5" style="height: 20vh">
+            One of the three columns
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="ayaatHadith-container bg-custom3">
-      <p>This is where the user will see the ayaat hadith</p>
-    </div>
-
-    <div class="donationAppeal-container bg-custom2">
+    <div class="donationAppeal-container bg-custom2 mt-5">
       <p>This is where the user will see the donation appeal</p>
     </div>
-
   </div>
 </body>
-
 </html>
